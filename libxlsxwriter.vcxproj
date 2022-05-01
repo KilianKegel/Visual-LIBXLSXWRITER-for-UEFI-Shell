@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{6e158ce4-83b9-4e15-9a27-f3896c2644d0}</ProjectGuid>
+    <RootNamespace>libxlsxwriter</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SoltionDir)build\$(ProjectName)$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(SoltionDir)build\$(ProjectName)$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SoltionDir)build\$(ProjectName)$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(SoltionDir)build\$(ProjectName)$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>false</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)zlib;$(SolutionDir)Include;$(SolutionDir)libxlsxwriter\include;$(SolutionDir)libxlsxwriter</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4996</DisableSpecificWarnings>
+      <SupportJustMyCode>false</SupportJustMyCode>
+      <ExceptionHandling>false</ExceptionHandling>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib>
+      <OutputFile>$(SolutionDir)$(TargetName)$(TargetExt)</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <SDLCheck>false</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;_NO_CRT_STDIO_INLINE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)zlib;$(SolutionDir)Include;$(SolutionDir)libxlsxwriter\include;$(SolutionDir)libxlsxwriter</AdditionalIncludeDirectories>
+      <Optimization>MinSpace</Optimization>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <ExceptionHandling>false</ExceptionHandling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <DisableSpecificWarnings>4996</DisableSpecificWarnings>
+      <UndefinePreprocessorDefinitions>
+      </UndefinePreprocessorDefinitions>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <StringPooling>true</StringPooling>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib>
+      <OutputFile>$(SolutionDir)$(TargetName)$(TargetExt)</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="libxlsxwriter\src\app.c" />
+    <ClCompile Include="libxlsxwriter\src\chart.c" />
+    <ClCompile Include="libxlsxwriter\src\chartsheet.c" />
+    <ClCompile Include="libxlsxwriter\src\comment.c" />
+    <ClCompile Include="libxlsxwriter\src\content_types.c" />
+    <ClCompile Include="libxlsxwriter\src\core.c" />
+    <ClCompile Include="libxlsxwriter\src\custom.c" />
+    <ClCompile Include="libxlsxwriter\src\drawing.c" />
+    <ClCompile Include="libxlsxwriter\src\format.c" />
+    <ClCompile Include="libxlsxwriter\src\hash_table.c" />
+    <ClCompile Include="libxlsxwriter\src\metadata.c" />
+    <ClCompile Include="libxlsxwriter\src\packager.c" />
+    <ClCompile Include="libxlsxwriter\src\relationships.c" />
+    <ClCompile Include="libxlsxwriter\src\shared_strings.c" />
+    <ClCompile Include="libxlsxwriter\src\styles.c" />
+    <ClCompile Include="libxlsxwriter\src\table.c" />
+    <ClCompile Include="libxlsxwriter\src\theme.c" />
+    <ClCompile Include="libxlsxwriter\src\utility.c" />
+    <ClCompile Include="libxlsxwriter\src\vml.c" />
+    <ClCompile Include="libxlsxwriter\src\workbook.c" />
+    <ClCompile Include="libxlsxwriter\src\worksheet.c" />
+    <ClCompile Include="libxlsxwriter\src\xmlwriter.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="libxlsxwriter\include\xlsxwriter.h" />
+    <ClInclude Include="libxlsxwriter\include\xlsxwriter\app.h" />
+    <ClInclude Include="libxlsxwriter\include\xlsxwriter\chart.h" />
+    <ClInclude Include="libxlsxwriter\include\xlsxwriter\chartsheet.h" />
+    <ClInclude Include="libxlsxwriter\include\xlsxwriter\comment.h" />
+    <ClInclude Include="libxlsxwriter\include\xlsxwriter\common.h" />
+    <ClInclude Include="libxlsxwriter\include\xlsxwriter\content_types.h" />
+    <ClInclude Include="libxlsxwriter\include\xlsxwriter\core.h" />
+    <ClInclude Include="libxlsxwriter\include\xlsxwriter\custom.h" />
+    <ClInclude Include="libxlsxwriter\include\xlsxwriter\drawing.h" />
+    <ClInclude Include="libxlsxwriter\include\xlsxwriter\format.h" />
+    <ClInclude Include="libxlsxwriter\include\xlsxwriter\hash_table.h" />
+    <ClInclude Include="libxlsxwriter\include\xlsxwriter\metadata.h" />
+    <ClInclude Include="libxlsxwriter\include\xlsxwriter\packager.h" />
+    <ClInclude Include="libxlsxwriter\include\xlsxwriter\relationships.h" />
+    <ClInclude Include="libxlsxwriter\include\xlsxwriter\shared_strings.h" />
+    <ClInclude Include="libxlsxwriter\include\xlsxwriter\styles.h" />
+    <ClInclude Include="libxlsxwriter\include\xlsxwriter\table.h" />
+    <ClInclude Include="libxlsxwriter\include\xlsxwriter\theme.h" />
+    <ClInclude Include="libxlsxwriter\include\xlsxwriter\third_party\emyg_dtoa.h" />
+    <ClInclude Include="libxlsxwriter\include\xlsxwriter\third_party\ioapi.h" />
+    <ClInclude Include="libxlsxwriter\include\xlsxwriter\third_party\md5.h" />
+    <ClInclude Include="libxlsxwriter\include\xlsxwriter\third_party\queue.h" />
+    <ClInclude Include="libxlsxwriter\include\xlsxwriter\third_party\tmpfileplus.h" />
+    <ClInclude Include="libxlsxwriter\include\xlsxwriter\third_party\tree.h" />
+    <ClInclude Include="libxlsxwriter\include\xlsxwriter\third_party\zip.h" />
+    <ClInclude Include="libxlsxwriter\include\xlsxwriter\utility.h" />
+    <ClInclude Include="libxlsxwriter\include\xlsxwriter\vml.h" />
+    <ClInclude Include="libxlsxwriter\include\xlsxwriter\workbook.h" />
+    <ClInclude Include="libxlsxwriter\include\xlsxwriter\worksheet.h" />
+    <ClInclude Include="libxlsxwriter\include\xlsxwriter\xmlwriter.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
