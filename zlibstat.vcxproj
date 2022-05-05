@@ -41,6 +41,7 @@
     <ClInclude Include="zlib\zutil.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
+    <MSBuildWarningsAsMessages>MSB8012</MSBuildWarningsAsMessages>
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
     <ProjectGuid>{66006346-911f-4d36-8bbc-401d74268eeb}</ProjectGuid>

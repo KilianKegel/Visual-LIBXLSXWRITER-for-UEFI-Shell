@@ -16,6 +16,7 @@
     <ProjectGuid>{6e158ce4-83b9-4e15-9a27-f3896c2644d0}</ProjectGuid>
     <RootNamespace>libxlsxwriter</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <MSBuildWarningsAsMessages>MSB8012</MSBuildWarningsAsMessages>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">

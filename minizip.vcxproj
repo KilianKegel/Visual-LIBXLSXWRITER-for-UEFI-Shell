@@ -11,6 +11,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
+    <MSBuildWarningsAsMessages>MSB8012</MSBuildWarningsAsMessages>
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
     <ProjectGuid>{432c5969-e81a-4052-bec0-5d882dce3f8f}</ProjectGuid>

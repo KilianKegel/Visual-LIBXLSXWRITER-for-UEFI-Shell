@@ -17,6 +17,7 @@
     <ClInclude Include="libxlsxwriter\third_party\tmpfileplus\tmpfileplus.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
+    <MSBuildWarningsAsMessages>MSB8012</MSBuildWarningsAsMessages>
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
     <ProjectGuid>{c69a21de-9d25-495f-a3f5-94ce446bccf9}</ProjectGuid>

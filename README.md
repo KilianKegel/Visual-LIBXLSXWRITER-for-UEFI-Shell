@@ -22,5 +22,8 @@ http://libxlsxwriter.github.io/
 
 ## Revision history
 
+### 20220505
+* suppress build warning *MSB8012* due rto redirected library output path
+
 ### 20220427
 * initial revision
