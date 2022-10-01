@@ -60,7 +60,7 @@
       <SDLCheck>false</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)zlib;$(SolutionDir)Include;$(SolutionDir)libxlsxwriter\include;$(SolutionDir)libxlsxwriter</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)zlib;$(ProjectDir)Include;$(ProjectDir)libxlsxwriter\include;$(ProjectDir)libxlsxwriter</AdditionalIncludeDirectories>
       <DisableSpecificWarnings>4996</DisableSpecificWarnings>
       <SupportJustMyCode>false</SupportJustMyCode>
       <ExceptionHandling>false</ExceptionHandling>
@@ -85,7 +85,7 @@
       <SDLCheck>false</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;_NO_CRT_STDIO_INLINE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)zlib;$(SolutionDir)Include;$(SolutionDir)libxlsxwriter\include;$(SolutionDir)libxlsxwriter</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)zlib;$(ProjectDir)Include;$(ProjectDir)libxlsxwriter\include;$(ProjectDir)libxlsxwriter</AdditionalIncludeDirectories>
       <Optimization>MinSpace</Optimization>
       <WholeProgramOptimization>false</WholeProgramOptimization>
       <ExceptionHandling>false</ExceptionHandling>
@@ -105,7 +105,7 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
     <Lib>
-      <OutputFile>$(SolutionDir)$(TargetName)$(TargetExt)</OutputFile>
+      <OutputFile>$(SolutionDir)lib\$(TargetName)$(TargetExt)</OutputFile>
     </Lib>
   </ItemDefinitionGroup>
   <ItemGroup>
