@@ -33,6 +33,8 @@ http://libxlsxwriter.github.io/
    solution is availale on the build machine.
 
 ## Revision history
+### 20221009/2
+* add dedicated Debug/Release configurations
 ### 20221009
 * provide library project **Visual-LIBXLSXWRITER-for-UEFI.vcxproj** that merges
   **libxlsxwriter**, **zlib**, **md5**, **minizip** and **tmpfileplus** into a monolithic library binary:
