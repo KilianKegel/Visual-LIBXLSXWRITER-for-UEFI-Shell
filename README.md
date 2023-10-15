@@ -33,6 +33,10 @@ http://libxlsxwriter.github.io/
    solution is availale on the build machine.
 
 ## Revision history
+### 20231015
+* improve usability: change output directory to `$(SolutionDir)\lib` for all subprojects
+  Subprojects can co-exist with other libraries, sharing the same output folder.
+* suppress Standard C function inlining for all modes and subprojects: `_NO_CRT_STDIO_INLINE`
 ### 20221009/2
 * add dedicated Debug/Release configurations
 ### 20221009
