@@ -10,12 +10,65 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="libxlsxwriter\src\app.c" />
+    <ClCompile Include="libxlsxwriter\src\chart.c" />
+    <ClCompile Include="libxlsxwriter\src\chartsheet.c" />
+    <ClCompile Include="libxlsxwriter\src\comment.c" />
+    <ClCompile Include="libxlsxwriter\src\content_types.c" />
+    <ClCompile Include="libxlsxwriter\src\core.c" />
+    <ClCompile Include="libxlsxwriter\src\custom.c" />
+    <ClCompile Include="libxlsxwriter\src\drawing.c" />
+    <ClCompile Include="libxlsxwriter\src\format.c" />
+    <ClCompile Include="libxlsxwriter\src\hash_table.c" />
+    <ClCompile Include="libxlsxwriter\src\metadata.c" />
+    <ClCompile Include="libxlsxwriter\src\packager.c" />
+    <ClCompile Include="libxlsxwriter\src\relationships.c" />
+    <ClCompile Include="libxlsxwriter\src\shared_strings.c" />
+    <ClCompile Include="libxlsxwriter\src\styles.c" />
+    <ClCompile Include="libxlsxwriter\src\table.c" />
+    <ClCompile Include="libxlsxwriter\src\theme.c" />
+    <ClCompile Include="libxlsxwriter\src\utility.c" />
+    <ClCompile Include="libxlsxwriter\src\vml.c" />
+    <ClCompile Include="libxlsxwriter\src\workbook.c" />
+    <ClCompile Include="libxlsxwriter\src\worksheet.c">
+      <TreatWChar_tAsBuiltInType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</TreatWChar_tAsBuiltInType>
+    </ClCompile>
+    <ClCompile Include="libxlsxwriter\src\xmlwriter.c" />
+    <ClCompile Include="libxlsxwriter\third_party\md5\md5.c" />
+    <ClCompile Include="libxlsxwriter\third_party\minizip\ioapi.c" />
+    <ClCompile Include="libxlsxwriter\third_party\minizip\iowin32.c" />
+    <ClCompile Include="libxlsxwriter\third_party\minizip\miniunz.c" />
+    <ClCompile Include="libxlsxwriter\third_party\minizip\minizip.c" />
+    <ClCompile Include="libxlsxwriter\third_party\minizip\mztools.c" />
+    <ClCompile Include="libxlsxwriter\third_party\minizip\unzip.c" />
+    <ClCompile Include="libxlsxwriter\third_party\minizip\zip.c" />
+    <ClCompile Include="libxlsxwriter\third_party\tmpfileplus\tmpfileplus.c" />
+    <ClCompile Include="zlib\adler32.c" />
+    <ClCompile Include="zlib\compress.c" />
+    <ClCompile Include="zlib\crc32.c" />
+    <ClCompile Include="zlib\deflate.c" />
+    <ClCompile Include="zlib\gzclose.c" />
+    <ClCompile Include="zlib\gzlib.c" />
+    <ClCompile Include="zlib\gzread.c" />
+    <ClCompile Include="zlib\gzwrite.c" />
+    <ClCompile Include="zlib\infback.c" />
+    <ClCompile Include="zlib\inffast.c" />
+    <ClCompile Include="zlib\inflate.c" />
+    <ClCompile Include="zlib\inftrees.c" />
+    <ClCompile Include="zlib\trees.c" />
+    <ClCompile Include="zlib\uncompr.c" />
+    <ClCompile Include="zlib\zutil.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="README.md" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
     <ProjectGuid>{c750b413-b457-4901-a3ce-87f541fa5232}</ProjectGuid>
     <RootNamespace>Visual_LIBXLSXWRITER_for_UEFI</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
@@ -48,26 +101,34 @@
     <IntDir>$(ProjectDir)$(Platform)\$(ProjectName)\$(Configuration)\</IntDir>
     <CustomBuildBeforeTargets>
     </CustomBuildBeforeTargets>
-    <CustomBuildAfterTargets>Clean</CustomBuildAfterTargets>
-    <RunCodeAnalysis>true</RunCodeAnalysis>
+    <CustomBuildAfterTargets>
+    </CustomBuildAfterTargets>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
     <PreLinkEventUseInBuild>false</PreLinkEventUseInBuild>
     <PostBuildEventUseInBuild>false</PostBuildEventUseInBuild>
+    <PreBuildEventUseInBuild>
+    </PreBuildEventUseInBuild>
+    <EnableMicrosoftCodeAnalysis>false</EnableMicrosoftCodeAnalysis>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <OutDir>$(SolutionDir)lib\</OutDir>
-    <CustomBuildAfterTargets>Clean</CustomBuildAfterTargets>
+    <CustomBuildAfterTargets>
+    </CustomBuildAfterTargets>
     <IntDir>$(ProjectDir)$(Platform)\$(ProjectName)\$(Configuration)\</IntDir>
     <CustomBuildBeforeTargets>
     </CustomBuildBeforeTargets>
-    <RunCodeAnalysis>true</RunCodeAnalysis>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
     <PreLinkEventUseInBuild>false</PreLinkEventUseInBuild>
     <PostBuildEventUseInBuild>false</PostBuildEventUseInBuild>
+    <PreBuildEventUseInBuild>
+    </PreBuildEventUseInBuild>
+    <EnableMicrosoftCodeAnalysis>false</EnableMicrosoftCodeAnalysis>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>false</SDLCheck>
-      <PreprocessorDefinitions>_DEBUG;_CONSOLE;_NO_CRT_STDIO_INLINE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;_NO_CRT_STDIO_INLINE</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <SupportJustMyCode>false</SupportJustMyCode>
@@ -79,11 +140,14 @@
       <BufferSecurityCheck>false</BufferSecurityCheck>
       <FunctionLevelLinking>false</FunctionLevelLinking>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
-      <IntrinsicFunctions>true</IntrinsicFunctions>
-      <OmitFramePointers>true</OmitFramePointers>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <OmitFramePointers>
+      </OmitFramePointers>
       <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
       <PrecompiledHeaderFile />
       <PrecompiledHeaderOutputFile />
+      <AdditionalIncludeDirectories>$(ProjectDir)zlib;$(ProjectDir)Include;$(ProjectDir)libxlsxwriter\include;$(ProjectDir)libxlsxwriter\include\xlsxwriter;$(ProjectDir)libxlsxwriter</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4996</DisableSpecificWarnings>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -96,10 +160,11 @@
       <DataExecutionPrevention>false</DataExecutionPrevention>
     </Link>
     <Lib>
-      <OutputFile>$(OutDir)\$(TargetName)$(TargetExt)</OutputFile>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
     </Lib>
     <Lib>
-      <AdditionalDependencies>libxlsxwriter.lib;md5.lib;minizip.lib;tmpfileplus.lib;zlibstat.lib</AdditionalDependencies>
+      <AdditionalDependencies>
+      </AdditionalDependencies>
     </Lib>
     <Lib>
       <AdditionalLibraryDirectories>$(ProjectDir)lib</AdditionalLibraryDirectories>
@@ -112,14 +177,20 @@
       <AdditionalOptions />
     </Lib>
     <PreBuildEvent>
-      <Command>for %%a in (libxlsxwriter md5 minizip tmpfileplus zlibstat) do cd $(ProjectDir) &amp; msbuild /p:Configuration=$(Configuration),Platform=$(Platform) %%a.vcxproj</Command>
-      <Message>### building LIBXLSXWRITER and 3party libraries ############################################</Message>
+      <Command>
+      </Command>
+      <Message>
+      </Message>
     </PreBuildEvent>
     <CustomBuildStep>
-      <Command>for %%a in (libxlsxwriter md5 minizip tmpfileplus zlibstat) do cd $(ProjectDir) &amp; msbuild /p:Configuration=$(Configuration),Platform=$(Platform) %%a.vcxproj -t:Clean</Command>
-      <Message>### cleaning LIBXLSXWRITER and 3party libraries ############################################</Message>
-      <TreatOutputAsContent>false</TreatOutputAsContent>
-      <Outputs>$(OutDir)\$(TargetName)$(TargetExt)</Outputs>
+      <Command>
+      </Command>
+      <Message>
+      </Message>
+      <TreatOutputAsContent>
+      </TreatOutputAsContent>
+      <Outputs>
+      </Outputs>
     </CustomBuildStep>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -128,7 +199,7 @@
       <FunctionLevelLinking>false</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>false</SDLCheck>
-      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;_NO_CRT_STDIO_INLINE</PreprocessorDefinitions>
       <ConformanceMode>false</ConformanceMode>
       <Optimization>MinSpace</Optimization>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
@@ -142,6 +213,8 @@
       <ExceptionHandling>false</ExceptionHandling>
       <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
       <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <AdditionalIncludeDirectories>$(ProjectDir)zlib;$(ProjectDir)Include;$(ProjectDir)libxlsxwriter\include;$(ProjectDir)libxlsxwriter\include\xlsxwriter;$(ProjectDir)libxlsxwriter</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4996</DisableSpecificWarnings>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -150,10 +223,11 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
     <Lib>
-      <OutputFile>$(OutDir)\$(TargetName)$(TargetExt)</OutputFile>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
     </Lib>
     <Lib>
-      <AdditionalDependencies>libxlsxwriter.lib;md5.lib;minizip.lib;tmpfileplus.lib;zlibstat.lib</AdditionalDependencies>
+      <AdditionalDependencies>
+      </AdditionalDependencies>
     </Lib>
     <Lib>
       <AdditionalLibraryDirectories>$(ProjectDir)lib</AdditionalLibraryDirectories>
@@ -166,21 +240,24 @@
       <AdditionalOptions />
     </Lib>
     <PreBuildEvent>
-      <Command>for %%a in (libxlsxwriter md5 minizip tmpfileplus zlibstat) do cd $(ProjectDir) &amp; msbuild /p:Configuration=$(Configuration),Platform=$(Platform) %%a.vcxproj</Command>
+      <Command>
+      </Command>
     </PreBuildEvent>
     <PreBuildEvent>
-      <Message>### building LIBXLSXWRITER and 3party libraries ############################################</Message>
+      <Message>
+      </Message>
     </PreBuildEvent>
     <CustomBuildStep>
-      <Command>for %%a in (libxlsxwriter md5 minizip tmpfileplus zlibstat) do cd $(ProjectDir) &amp; msbuild /p:Configuration=$(Configuration),Platform=$(Platform) %%a.vcxproj -t:Clean</Command>
-      <Message>### cleaning LIBXLSXWRITER and 3party libraries ############################################</Message>
-      <TreatOutputAsContent>false</TreatOutputAsContent>
-      <Outputs>$(OutDir)\$(TargetName)$(TargetExt)</Outputs>
+      <Command>
+      </Command>
+      <Message>
+      </Message>
+      <TreatOutputAsContent>
+      </TreatOutputAsContent>
+      <Outputs>
+      </Outputs>
     </CustomBuildStep>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="main.c" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

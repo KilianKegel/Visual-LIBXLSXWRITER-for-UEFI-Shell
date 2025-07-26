@@ -32,7 +32,13 @@ http://libxlsxwriter.github.io/
    This option requires that the entire [**Visual-LIBXLSXWRITER-for-UEFI-Shell**](https://github.com/KilianKegel/Visual-LIBXLSXWRITER-for-UEFI-Shell)
    solution is availale on the build machine.
 
+## Tool chain support
+* **LLVM/CLANG:** NO
+* **Microsoft v143, v142, v141**: YES
+
 ## Revision history
+### 20250726
+* simplify component structure, merge all subprojects into one single **Visual-LIBXLSXWRITER-for-UEFI**
 ### 20231015
 * improve usability: change output directory to `$(SolutionDir)\lib` for all subprojects
   Subprojects can co-exist with other libraries, sharing the same output folder.

@@ -15,8 +15,146 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main.c">
+    <ClCompile Include="libxlsxwriter\src\app.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="libxlsxwriter\src\chart.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libxlsxwriter\src\chartsheet.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libxlsxwriter\src\comment.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libxlsxwriter\src\content_types.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libxlsxwriter\src\core.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libxlsxwriter\src\custom.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libxlsxwriter\src\drawing.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libxlsxwriter\src\format.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libxlsxwriter\src\hash_table.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libxlsxwriter\src\metadata.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libxlsxwriter\src\packager.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libxlsxwriter\src\relationships.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libxlsxwriter\src\shared_strings.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libxlsxwriter\src\styles.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libxlsxwriter\src\table.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libxlsxwriter\src\theme.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libxlsxwriter\src\utility.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libxlsxwriter\src\vml.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libxlsxwriter\src\workbook.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libxlsxwriter\src\worksheet.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libxlsxwriter\src\xmlwriter.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libxlsxwriter\third_party\md5\md5.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libxlsxwriter\third_party\minizip\ioapi.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libxlsxwriter\third_party\minizip\iowin32.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libxlsxwriter\third_party\minizip\miniunz.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libxlsxwriter\third_party\minizip\minizip.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libxlsxwriter\third_party\minizip\mztools.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libxlsxwriter\third_party\minizip\unzip.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libxlsxwriter\third_party\minizip\zip.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libxlsxwriter\third_party\tmpfileplus\tmpfileplus.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib\adler32.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib\compress.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib\crc32.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib\deflate.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib\gzclose.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib\gzlib.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib\gzread.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib\gzwrite.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib\infback.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib\inffast.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib\inflate.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib\inftrees.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib\trees.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib\uncompr.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="zlib\zutil.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="README.md" />
   </ItemGroup>
 </Project>
